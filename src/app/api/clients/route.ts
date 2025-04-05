@@ -3,7 +3,6 @@ import {NextResponse} from 'next/server'
 
 const prisma = new PrismaClient()
 
-// Método GET para buscar os clientes
 export async function GET() {
   try {
     const clients = await prisma.client.findMany()

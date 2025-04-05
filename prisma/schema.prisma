@@ -58,9 +58,27 @@ model VerificationToken {
 }
 
 model Client {
-  id        String   @id @default(uuid())
-  name      String
-  email     String   @unique
-  phone     String?
-  createdAt DateTime @default(now())
+  id                   String    @id @default(uuid())
+  name                 String
+  email                String    @unique
+  phone                String?
+  mobile               String?
+  rg                   String?
+  cpf                  String?
+  birthDate            DateTime?
+  gender               String?
+  maritalStatus        String?
+  nationality          String?
+  placeOfBirth         String?
+  educationLevel       String?
+  educationField       String?
+  professionalCategory String?
+  associationCategory  String?
+  address              String?
+  neighborhood         String?
+  city                 String?
+  state                String?
+  cep                  String?
+  otherContact         String?
+  createdAt            DateTime  @default(now())
 }
